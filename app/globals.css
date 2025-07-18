@@ -13,7 +13,8 @@ body {
 }
 
 :root {
-  --green : #62EFA0
+  --green : #62EFA0;
+  --darkGreen : #28764b;
 }
 
 
