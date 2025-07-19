@@ -39,6 +39,13 @@ export default function Home() {
         <div><h3>Latest Publications</h3></div>
         <Publications/>
       </div>
+
+
+      {/* SAY HELLO */}
+      <div className={styles.hello}>
+        <p>Say Hello 👋</p>
+        <a href="mailto:hello@iheanacho.io">hello@iheanacho.io</a>
+      </div>
     </>
   );
 }
