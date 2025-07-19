@@ -23,7 +23,6 @@
     border-radius: 1rem;
     overflow: hidden;
     flex: 1;
-    background: red;
 }
 .banner img{
     object-fit: cover;
@@ -72,14 +71,14 @@
 }
 }
 @media (max-width:900px) {
-    
+
 .pubCtn {
   grid-template-columns: repeat(1, 1fr);
   gap: 1.5rem;
 }
 
 .pub {
-  padding: 2rem;
+  padding: 1rem;
   border-radius: 1.5rem;
   gap: 2rem;
 }
@@ -87,13 +86,21 @@
 .content {
     flex: 1.8;
 }
-
+.banner{
+    height: 10rem;
+}
+.banner img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
 .content h4{
-    font-size: 1.7rem;
-    margin-bottom: 2rem;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
 }
 
 .content p{
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
 }
