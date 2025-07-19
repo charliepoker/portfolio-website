@@ -36,6 +36,7 @@ export default function Home() {
 
       {/* LATEST PUBLICATIONS */}
       <div className={styles.publications}>
+        <div><h3>Latest Publications</h3></div>
         <Publications/>
       </div>
     </>
