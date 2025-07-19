@@ -9,8 +9,9 @@
 .techData {
     flex: 2.7;
     border-radius: 2rem;
-    background: #F5F5F5;
+    background: #f6f9fc;
     padding: 3rem 4rem;
+    border: 1px solid #e4e7ea;
 }
 .techData h3 {
     font-size: 2.4rem;
@@ -234,7 +235,7 @@
 
 @media (max-width:600px) {
     .tech {
-    padding: 4rem 3.5% 2rem 3.5%;
+    padding: 4rem 5% 2rem 5%;
 }
 
 .techData {

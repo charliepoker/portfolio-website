@@ -57,6 +57,7 @@
     height: auto;
     width: 55%;
     z-index: 9999999;
+    opacity:0;
 }
 
 .links ul {
