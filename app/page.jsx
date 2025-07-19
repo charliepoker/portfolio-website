@@ -1,5 +1,6 @@
 import Hero from "@/components/Hero/Hero";
 import styles from "./page.module.css";
+import MyTools from "@/components/MyTools/MyTools";
 
 export default function Home() {
   return (
@@ -25,7 +26,11 @@ export default function Home() {
         </ul>
       </div>
     </div>
-    
+
+    {/* TOOLS AND SOFFTARE */}
+      <div>
+        <MyTools/>
+      </div>
     </>
   );
 }
