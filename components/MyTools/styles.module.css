@@ -167,7 +167,7 @@
   display: flex;
   animation: scrollReverse 20s linear infinite;
   width: max-content;
-  gap: 2rem;
+  gap: 1rem;
 
 }
 
