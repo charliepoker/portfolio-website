@@ -1,6 +1,7 @@
 import Hero from "@/components/Hero/Hero";
 import styles from "./page.module.css";
 import MyTools from "@/components/MyTools/MyTools";
+import Publications from "@/components/Publications/Publications";
 
 export default function Home() {
   return (
@@ -30,6 +31,12 @@ export default function Home() {
     {/* TOOLS AND SOFFTARE */}
       <div>
         <MyTools/>
+      </div>
+
+
+      {/* LATEST PUBLICATIONS */}
+      <div className={styles.publications}>
+        <Publications/>
       </div>
     </>
   );

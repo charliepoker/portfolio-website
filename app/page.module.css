@@ -301,3 +301,17 @@
     max-width: 15rem;
 }
 }
+
+/* PUBLICATIONS */
+.publications {
+    background: black;
+    padding: 5rem 10%
+}
+
+
+@media (max-width:1280px) {
+    .publications {
+    padding: 5rem 7%
+}
+
+}
