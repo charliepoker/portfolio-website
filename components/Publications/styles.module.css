@@ -15,7 +15,7 @@
   padding: 2.5rem;
   align-items: center;
   border-radius: 1.5rem;
-  gap: 3.8rem;
+  gap: 3rem;
 }
 
 
@@ -23,9 +23,12 @@
     border-radius: 1rem;
     overflow: hidden;
     flex: 1;
+    height: 15rem
 }
 .banner img{
     object-fit: cover;
+    height: 100%;
+    width: 100%;
 }
 
 .content {

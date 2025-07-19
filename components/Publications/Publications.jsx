@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 const articles = [
     {
-        title: 'Solving Kubernetes Scheduling Challenges with Taints and Tolerations',
+        title: 'Solving Kubernetes Scheduling Challenges with Taints and Toleration',
         date: 'April 4th 2025',
         banner: Assets.banner
     },
