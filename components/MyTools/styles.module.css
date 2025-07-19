@@ -38,7 +38,7 @@
 }
 
 .toolsSliderCtn {
-    background: #f6f9fc;
+    background: #f1f4f8;
     padding: 5rem 0rem 5rem 0rem;
     border-radius: 2rem;
     display: flex;
@@ -160,7 +160,7 @@
   display: flex;
   animation: scroll 20s linear infinite;
   width: max-content;
-  gap: 2rem;
+  gap:.8rem;
 }
 
 .marqueeContentReverse {
