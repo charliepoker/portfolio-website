@@ -84,37 +84,37 @@ function ResumeDetails() {
 
         <div className={styles.main}>
           <section
-  id='intro'
-  className={`${styles.card} ${activeSection === "intro" ? styles.activeCard : ""}`}
->
-  <h3>Obinna Iheanacho</h3>
-  <p>A seasoned DevOps Engineer specializing in blockchain infrastructure, cloud engineering, and Web3 node operations. With extensive experience managing large-scale systems on GCP and AWS, he has collaborated with industry leaders like Supra Oracles, Nethermind, and Alphaday.</p>
-  <p>He also leads Sunset Digital Studios, a platform offering free digital assets, and is building the NodeOps Syndicate to bridge DevOps and blockchain expertise.</p>
-</section>
+            id='intro'
+            className={`${styles.card} ${activeSection === "intro" ? styles.activeCard : ""}`}
+            >
+            <h3>Obinna Iheanacho</h3>
+            <p>A seasoned DevOps Engineer specializing in blockchain infrastructure, cloud engineering, and Web3 node operations. With extensive experience managing large-scale systems on GCP and AWS, he has collaborated with industry leaders like Supra Oracles, Nethermind, and Alphaday.</p>
+            <p>He also leads Sunset Digital Studios, a platform offering free digital assets, and is building the NodeOps Syndicate to bridge DevOps and blockchain expertise.</p>
+            </section>
 
-<section
-  id='skills'
-  className={`${styles.card} ${activeSection === "skills" ? styles.activeCard : ""}`}
->
-  <h3>Skills</h3>
-  <SkillsAccordion items={skillsData} />
-</section>
+            <section
+            id='skills'
+            className={`${styles.card} ${activeSection === "skills" ? styles.activeCard : ""}`}
+            >
+            <h3>Skills</h3>
+            <SkillsAccordion items={skillsData} />
+            </section>
 
-<section
-  id='employment'
-  className={`${styles.card} ${activeSection === "employment" ? styles.activeCard : ""}`}
->
-  <h3>Employment History</h3>
-  <SkillsAccordion items={employmentHistory} />
-</section>
+            <section
+            id='employment'
+            className={`${styles.card} ${activeSection === "employment" ? styles.activeCard : ""}`}
+            >
+            <h3>Employment History</h3>
+            <SkillsAccordion items={employmentHistory} />
+            </section>
 
-<section
-  id='education'
-  className={`${styles.card} ${activeSection === "education" ? styles.activeCard : ""}`}
->
-  <h3>Education and Certification</h3>
-  <SkillsAccordion items={educationHistory} />
-</section>
+            <section
+            id='education'
+            className={`${styles.card} ${activeSection === "education" ? styles.activeCard : ""}`}
+            >
+            <h3>Education and Certification</h3>
+            <SkillsAccordion items={educationHistory} />
+            </section>
 
         </div>
       </div>
