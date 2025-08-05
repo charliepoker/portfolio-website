@@ -60,6 +60,7 @@
     flex-direction: column;
     justify-content: flex-end;
         background: linear-gradient(rgb(12, 94, 55), rgb(4, 24, 18));
+        background: rgb(10, 43, 25);
 
 }
 
@@ -434,3 +435,80 @@
 
 }
 
+
+
+/* Additional GSAP-compatible styles - Add these to your existing styles.module.css */
+
+/* Performance optimizations for GSAP animations */
+.hero {
+  will-change: transform;
+}
+
+.card {
+  will-change: transform;
+}
+
+/* Smooth hover transitions for social links (works with your existing hover styles) */
+.socials li a,
+.socialsBottom li a {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Enhanced hover effect for the green color transition */
+.socials li:hover,
+.socialsBottom li:hover {
+  transform: translateX(3px);
+}
+
+/* Smooth button hover effect */
+.third a {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-block;
+}
+
+.third a:hover {
+  transform: translateY(-1px);
+  filter: brightness(1.1);
+}
+
+/* Subtle glow effect on hover for titles */
+.first h1:hover,
+.third h2:hover {
+  text-shadow: 0 0 15px rgba(98, 239, 160, 0.2);
+  transition: text-shadow 0.3s ease;
+}
+
+/* Arrow icon smooth animation */
+.socials li a svg,
+.socialsBottom li a svg {
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.socials li:hover a svg,
+.socialsBottom li:hover a svg {
+  transform: translate(2px, -2px);
+}
+
+/* Prevent flash during initial load */
+.hero * {
+  backface-visibility: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Mobile-specific optimizations */
+@media (max-width: 820px) {
+  .hero {
+    will-change: auto; /* Reduce GPU usage on mobile */
+  }
+  
+  /* Lighter hover effects on mobile */
+  .socials li:hover,
+  .socialsBottom li:hover {
+    transform: none;
+  }
+  
+  .third a:hover {
+    transform: none;
+  }
+}

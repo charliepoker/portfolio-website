@@ -11,6 +11,25 @@
     padding: 0 7%;
     z-index: 9999999;
 }
+.nav {
+  transition: all 0.3s ease, padding 0.3s ease;
+  z-index: 1000;
+}
+
+.scrolled {
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  width: 70%;
+  background: rgba(0, 0, 0, 0.492);
+  transform: translateX(-50%);
+  margin: 0 auto;
+  border-radius: 50px;
+  height: 6rem;
+  padding: 0 1%;
+  backdrop-filter: blur(10px);
+
+}
 
 .logo {
     font-size: 2.4rem;
@@ -67,10 +86,46 @@
     border: 2px solid white;
 }
 
+@media (max-width: 1000px) {
+    
+.scrolled {
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  width: 90%;
+  background: rgba(0, 0, 0, 0.492);
+  transform: translateX(-50%);
+  margin: 0 auto;
+  border-radius: 50px;
+  height: 6rem;
+  padding: 0 1%;
+  backdrop-filter: blur(10px);
+
+}
+}
+
+
+
 @media (max-width:840px) {
     .nav {
     height: 7rem;
     padding: 0 6%;
+}
+
+
+.scrolled {
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.492);
+  transform: translateX(-50%);
+  margin: 0 auto;
+  border-radius: 50px;
+  height: 5rem;
+  padding: 0 1%;
+  backdrop-filter: blur(10px);
+
 }
 
 .logo {

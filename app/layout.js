@@ -2,6 +2,10 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
+<<<<<<< HEAD
+=======
+import Preloader from "@/components/Preloader/Preloader";
+>>>>>>> dev-leslie
 
 const inter = Inter({
   variable: "--font-inter",
@@ -20,8 +24,13 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${inter.variable}`}>
         <Navbar/>
+        
         {children}
         <Footer/>
+<<<<<<< HEAD
+=======
+        {/* <Preloader /> */}
+>>>>>>> dev-leslie
       </body>
     </html>
   );

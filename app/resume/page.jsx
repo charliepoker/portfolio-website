@@ -5,6 +5,10 @@ import { Assets } from '@/lib/Assets';
 import Link from 'next/link';
 import { GoArrowUpRight } from "react-icons/go";
 import ResumeDetails from '@/components/ResumeDetails/ResumeDetails';
+<<<<<<< HEAD
+=======
+import Preloader from '@/components/Preloader/Preloader';
+>>>>>>> dev-leslie
 
 function page() {
   return (
@@ -26,6 +30,11 @@ function page() {
     </div>
 
     <ResumeDetails/>
+<<<<<<< HEAD
+=======
+
+     <Preloader text="{DEV.OBINNA.RESUME}" />
+>>>>>>> dev-leslie
     </>
 
   )
