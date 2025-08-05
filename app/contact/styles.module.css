@@ -1,9 +1,9 @@
 .container {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     gap: 10rem;
-    background: black;
+    background: rgb(9, 12, 18);
     height: auto;
     padding: 15rem 5% 15rem 5%
 }
@@ -32,6 +32,8 @@
     padding:3.2rem;
     border-radius: 2rem;
     width: 47rem;
+        background: rgba(60, 67, 74, 0.512);
+
 }
 
 .formCtn h3 {
@@ -47,6 +49,8 @@
     margin-bottom: 2.5rem;
     display: flex;
     flex-direction: column;
+        background: rgb(9, 12, 18);
+
 }
 
 .formGroup label{
