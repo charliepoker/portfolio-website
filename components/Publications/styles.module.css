@@ -1,7 +1,7 @@
 .pubCtn {
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* Responsive */
-  gap: 2rem;
+  gap: 4rem;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -12,7 +12,7 @@
 .pub {
   display: flex;
   background: #1a1c1e;
-  padding: 2.5rem;
+  padding: 1rem;
   align-items: center;
   border-radius: 1.5rem;
   gap: 3rem;
@@ -34,6 +34,7 @@
 .content {
     color: white;
     flex: 2;
+    padding-right: 2rem;
 }
 
 .content h4{

@@ -2,6 +2,35 @@ import Hero from "@/components/Hero/Hero";
 import styles from "./page.module.css";
 import MyTools from "@/components/MyTools/MyTools";
 import Publications from "@/components/Publications/Publications";
+import { Assets } from "@/lib/Assets";
+
+
+
+const articles = [
+    {
+        title: 'Solving Kubernetes Scheduling Challenges with Taints and Toleration',
+        date: 'April 4th 2025',
+        banner: Assets.banner
+    },
+    {
+        title: 'A Deep Dive into Kubernetes Networking for Scalable Applications',
+        date: 'April 5th 2025',
+        banner: Assets.banner
+    },
+    {
+        title: 'Managing Secrets in Kubernetes: Best Practices',
+        date: 'April 6th 2025',
+        banner: Assets.banner
+    },
+    {
+        title: 'Optimizing Kubernetes Cluster Performance: Key Strategies',
+        date: 'April 7th 2025',
+        banner: Assets.banner
+    },
+
+ 
+];
+
 
 export default function Home() {
   return (
@@ -37,7 +66,7 @@ export default function Home() {
       {/* LATEST PUBLICATIONS */}
       <div className={styles.publications}>
         <div><h3>Latest Publications</h3></div>
-        <Publications/>
+        <Publications articles={articles}/>
       </div>
 
 

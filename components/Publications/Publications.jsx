@@ -3,31 +3,8 @@ import styles from './styles.module.css'
 import { Assets } from '@/lib/Assets';
 import Image from 'next/image';
 
-const articles = [
-    {
-        title: 'Solving Kubernetes Scheduling Challenges with Taints and Toleration',
-        date: 'April 4th 2025',
-        banner: Assets.banner
-    },
-    {
-        title: 'Solving Kubernetes Scheduling Challenges with Taints and Tolerations',
-        date: 'April 4th 2025',
-        banner: Assets.banner
-    },
-    {
-        title: 'Solving Kubernetes Scheduling Challenges with Taints and Tolerations',
-        date: 'April 4th 2025',
-        banner: Assets.banner
-    },
-    {
-        title: 'Solving Kubernetes Scheduling Challenges with Taints and Tolerations',
-        date: 'April 4th 2025',
-        banner: Assets.banner
-    },
 
-]
-
-function Publications() {
+function Publications({articles}) {
   return (
     <div className={styles.pubCtn}>
 
