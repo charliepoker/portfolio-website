@@ -288,3 +288,10 @@
 }
 
 }
+
+.status {
+    font-size: 1.5rem;
+    color: rgb(196, 196, 196);
+    margin-top: 1rem;
+    text-align: center;
+}
