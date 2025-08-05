@@ -3,6 +3,7 @@ import styles from './styles.module.css';
 import { Assets } from '@/lib/Assets';
 import Publications from '@/components/Publications/Publications';
 import SayHello from '@/components/SayHello/SayHello';
+import Preloader from '@/components/Preloader/Preloader';
 
 const articles = [
     {
@@ -79,6 +80,8 @@ function Blog() {
 
     </div>
         <SayHello/>
+
+        <Preloader  text="{DEV.OBINNA.BLOG}" />
         </>
   )
 }

@@ -5,6 +5,7 @@ import { Assets } from '@/lib/Assets';
 import Link from 'next/link';
 import { GoArrowUpRight } from "react-icons/go";
 import ResumeDetails from '@/components/ResumeDetails/ResumeDetails';
+import Preloader from '@/components/Preloader/Preloader';
 
 function page() {
   return (
@@ -26,6 +27,8 @@ function page() {
     </div>
 
     <ResumeDetails/>
+
+     <Preloader text="{DEV.OBINNA.RESUME}" />
     </>
 
   )

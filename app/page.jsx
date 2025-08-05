@@ -1,8 +1,14 @@
+'use client'
+
+import { useState, useEffect } from 'react';
+
 import Hero from "@/components/Hero/Hero";
 import styles from "./page.module.css";
 import MyTools from "@/components/MyTools/MyTools";
 import Publications from "@/components/Publications/Publications";
 import { Assets } from "@/lib/Assets";
+import SayHello from "@/components/SayHello/SayHello";
+import Preloader from "@/components/Preloader/Preloader";
 
 
 
@@ -38,6 +44,7 @@ const articles = [
 
 
 export default function Home() {
+    const [showPreloader, setShowPreloader] = useState(true);
   return (
     <>
     <Hero/>
@@ -76,10 +83,14 @@ export default function Home() {
 
 
       {/* SAY HELLO */}
-      <div className={styles.hello}>
-        <p>Say Hello 👋</p>
-        <a href="mailto:hello@iheanacho.io">hello@iheanacho.io</a>
-      </div>
+      <SayHello/>
+      
+ {showPreloader && (
+        <Preloader 
+          text="{DEV.OBINNA}" 
+      
+        />
+      )}
     </>
   );
 }

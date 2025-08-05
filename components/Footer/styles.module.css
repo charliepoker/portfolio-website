@@ -5,7 +5,7 @@
     justify-content: center;
     flex-direction: column;
     gap: 4rem;
-    background: #f5f5f5;
+    background: #0d1018;
 }
 
 .socials  ul {
@@ -20,6 +20,7 @@
 }
 .socials  ul li{
     transition: all .4s;
+    color: white;
 }
 .socials  ul li:hover{
     color: var(--darkGreen);

@@ -4,6 +4,7 @@ import { useState } from 'react';
 import styles from './styles.module.css';
 import Socials from '@/components/Socials/Socials';
 import { sendEmail } from '@/app/actions/sendEmail';
+import Preloader from '@/components/Preloader/Preloader';
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
@@ -34,6 +35,7 @@ export default function ContactForm() {
   };
 
   return (
+    <>
     <div className={styles.container}>
       <div className={styles.content}>
         <h1>Have a question? Let's Get in Touch</h1>
@@ -87,5 +89,9 @@ export default function ContactForm() {
         {status && <p className={styles.status}>{status}</p>}
       </div>
     </div>
+
+    <Preloader text="{DEV.OBINNA.CONTACT}"/>
+
+        </>
   );
 }
