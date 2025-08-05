@@ -1,7 +1,7 @@
 .pubCtn {
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* Responsive */
-  gap: 4rem;
+  gap: 3rem;
   justify-content: center;
   align-items: center;
   width: 100%;

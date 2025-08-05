@@ -10,26 +10,31 @@ const articles = [
     {
         title: 'Solving Kubernetes Scheduling Challenges with Taints and Toleration',
         date: 'April 4th 2025',
-        banner: Assets.banner
+        banner: Assets.banner,
+        url: "/"
     },
     {
         title: 'A Deep Dive into Kubernetes Networking for Scalable Applications',
         date: 'April 5th 2025',
-        banner: Assets.banner
+        banner: Assets.banner,
+        url: "/"
     },
     {
         title: 'Managing Secrets in Kubernetes: Best Practices',
         date: 'April 6th 2025',
-        banner: Assets.banner
+        banner: Assets.banner,
+        url: "/"
     },
     {
         title: 'Optimizing Kubernetes Cluster Performance: Key Strategies',
         date: 'April 7th 2025',
-        banner: Assets.banner
+        banner: Assets.banner,
+        url: "/"
     },
 
- 
+
 ];
+
 
 
 export default function Home() {
