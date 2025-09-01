@@ -1,0 +1,50 @@
+.socials {
+    display: flex;
+    align-items: center;
+    gap: 3.5rem;
+}
+
+.socials li{
+    color: #eee;
+    list-style: none;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    font-weight: 500;
+    transition: all .5s;
+}
+.socials li a{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.socials li:hover{
+    color: var(--green);
+}
+
+@media (max-width:1080px) {
+    .socials {
+    gap: 1.5rem;
+}
+
+.socials li{
+    font-size: 1.2rem;
+}
+
+
+
+.second {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.second img{
+    object-fit: contain;
+    object-position: bottom;
+    height: 45rem;
+
+
+}
+}

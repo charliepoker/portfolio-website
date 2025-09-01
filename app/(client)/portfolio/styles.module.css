@@ -1,0 +1,214 @@
+.container {
+    padding: 20rem 8%;
+    background: black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title h1{
+    color: white;
+    font-size: 5rem;
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    width: 100%;
+    margin-top: 8rem;
+}
+
+.card {
+    background: #3C3C43;
+    border-radius: 10px;
+    padding: 1.5rem;
+    flex: 1;
+    transition: all .5s;
+}
+.card:hover {
+    background: var(--darkGreen);
+}
+
+.cardImage {
+    height: 22rem;
+    width: 100%;
+    background: #494958;
+    position: relative;
+    border-radius: .7rem;
+    margin-bottom: 1.5rem;
+}
+.cardImage img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.cardTexts  {
+    padding: 1rem;
+}
+.cardTexts h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: white;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+.cardTexts p {
+    font-size: 1.4rem;
+    color: rgb(205, 205, 205);
+    line-height: 1.35
+}
+
+
+@media (max-width: 1280px) {
+    .container {
+    padding: 15rem 7%;
+}
+
+.title h1{
+    font-size: 4rem;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+    margin-top: 8rem;
+}
+
+.card {
+    padding: 1.5rem;
+}
+
+
+.cardImage {
+    height: 18rem;
+}
+
+.cardTexts  {
+    padding: 1rem;
+}
+.cardTexts h3 {
+    font-size: 1.7rem;
+}
+
+.cardTexts p {
+    font-size: 1.4rem;
+}
+}
+
+
+@media (max-width: 1080px) {
+    .container {
+    padding: 15rem 8%;
+}
+
+.title h1{
+    font-size: 3.5rem;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+    margin-top: 8rem;
+}
+
+.card {
+    padding: 1.5rem;
+}
+
+
+.cardImage {
+    height: 20rem;
+}
+
+.cardTexts  {
+    padding: 1rem;
+}
+.cardTexts h3 {
+    font-size: 1.7rem;
+}
+
+.cardTexts p {
+    font-size: 1.4rem;
+}
+}
+
+@media (max-width: 740px) {
+    .container {
+    padding: 15rem 5% 10rem 5%;
+}
+
+.title h1{
+    font-size: 3.5rem;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-top: 8rem;
+}
+
+.card {
+    padding: 1.5rem;
+}
+
+
+.cardImage {
+    height: 20rem;
+}
+
+.cardTexts  {
+    padding: 1rem;
+}
+.cardTexts h3 {
+    font-size: 1.6rem;
+}
+
+.cardTexts p {
+    font-size: 1.4rem;
+}
+}
+
+@media (max-width: 500px) {
+    .container {
+    padding: 12rem 5% 10rem 5%;
+}
+
+.title h1{
+    font-size: 2.5rem;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.5rem;
+    margin-top: 4rem;
+}
+
+.card {
+    padding: 1.5rem;
+}
+
+
+.cardImage {
+    height: 18rem;
+}
+
+.cardTexts  {
+    padding: 1rem;
+}
+.cardTexts h3 {
+    font-size: 1.6rem;
+}
+
+.cardTexts p {
+    font-size: 1.4rem;
+}
+}

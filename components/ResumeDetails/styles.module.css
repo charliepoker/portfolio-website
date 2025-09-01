@@ -1,0 +1,148 @@
+.container {
+    display: flex;
+    align-items: flex-start;
+    gap: 50px;
+    padding: 8rem 7%;
+    background: #F9F9F9;
+}
+
+.sidebar {
+    flex: 1;
+    position: sticky;
+    top: 40px;
+
+}
+
+.sidebar ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sidebar ul  li{
+    font-size: 20px;
+    color: #A1A1A1;
+    font-weight: 700 ;
+    list-style: none;
+}
+.sidebar ul li.active{
+    color: black;
+}
+
+.main {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.card {
+    min-height: 30rem;
+    background: white;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.046);
+    padding: 30px;
+    height: auto;
+}
+.activeCard {
+  background: var(--darkLight); 
+  box-shadow: none;
+  transition: all .5s
+}
+.card h3{
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 3.2rem;
+    letter-spacing: -1px;
+}
+
+.card p{
+    font-size: 17px;
+    margin-bottom: 1.5rem;
+    line-height: 1.45;
+}
+
+
+@media (max-width:1000px) {
+    .container {
+    gap: 30px;
+    padding: 5rem 7%;
+
+}
+
+
+.sidebar ul {
+    gap: 10px;
+}
+
+.sidebar ul  li{
+    font-size: 1.6rem;
+}
+
+.main {
+    flex: 3;
+    gap: 15px;
+}
+
+.card {
+    width: 100%;
+    padding: 2.5rem;
+    height: auto;
+}
+
+.card h3{
+    font-size:2rem;
+    margin-bottom: 2rem;
+}
+
+.card p{
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    line-height: 1.45;
+}
+}
+
+
+@media (max-width:600px) {
+    .container {
+    gap: 30px;
+    padding: 2rem 4%;
+
+}
+
+
+.sidebar  {
+    display: none;
+}
+
+.sidebar ul {
+    gap: 10px;
+}
+
+.sidebar ul  li{
+    font-size: 1.6rem;
+}
+
+.main {
+    flex: 3;
+    gap: 15px;
+}
+
+.card {
+    width: 100%;
+    padding: 1.8rem;
+    height: auto;
+}
+
+.card h3{
+    font-size:1.8rem;
+    margin-bottom: 1rem;
+}
+
+.card p{
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    line-height: 1.45;
+}
+}

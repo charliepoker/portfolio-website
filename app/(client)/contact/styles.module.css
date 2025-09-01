@@ -1,0 +1,301 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10rem;
+    background: rgb(9, 12, 18);
+    height: auto;
+    padding: 15rem 10% 15rem 10%
+}
+
+.content h1 {
+    color: white;
+    font-size: 2rem;
+}
+
+.content .link {
+    color: #A1A1A1;
+    font-size: 4rem;
+    display: inline-flex;
+    margin-bottom: 7rem;
+    transition: all .4s;
+    font-weight: 700;
+}
+.content .link:hover {
+    color: var(--green)
+}
+
+
+
+.formCtn {
+    background: #202020;
+    padding:3.2rem;
+    border-radius: 2rem;
+    width: 47rem;
+        background: rgba(60, 67, 74, 0.512);
+
+}
+
+.formCtn h3 {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    color: white;
+}
+
+.formGroup {
+    background: #323232;
+    border-radius: .5rem;
+    padding: 1.5rem;
+    margin-bottom: 2.5rem;
+    display: flex;
+    flex-direction: column;
+        background: rgb(9, 12, 18);
+
+}
+
+.formGroup label{
+    font-size: 1.4rem;
+    color: white;
+    font-weight: 600;
+}
+
+.formGroup input, .formGroup textarea {
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 1rem 0;
+    font-family: inherit;
+    color: rgb(160, 255, 184);
+    font-size: 1.6rem;
+}
+
+.formGroup input::placeholder {
+    color: #757575;
+    font-size: 1.4rem;
+}
+
+.formGroup textarea::placeholder {
+    color: #757575;
+    font-size: 1.4rem;
+}
+
+.contactForm button {
+    cursor: pointer;
+    height: 5.5rem;
+    background: var(--darkGreen);
+    color: rgb(0, 0, 0);
+    border-radius: .5rem;
+    outline: none;
+    border: none;
+    width: 100%;
+    text-align: center;
+    font-family: inherit;
+    transition: all .3s;
+
+}
+
+.contactForm button:hover {
+    background: var(--green);
+}
+
+
+@media (max-width:1080px) {
+    .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10rem;
+    background: black;
+    height: auto;
+    padding: 15rem 5% 15rem 5%
+}
+
+.content h1 {
+    font-size: 1.7rem;
+}
+
+.content .link {
+    font-size: 3rem;
+    margin-bottom: 7rem;
+}
+
+.formCtn {
+    padding:2rem;
+    border-radius: 1.5rem;
+    width: 40rem;
+}
+
+.formCtn h3 {
+    font-size: 1.7rem;
+    margin-bottom: 2.5rem;
+}
+
+.formGroup {
+    border-radius: .5rem;
+    padding: 1rem;
+    margin-bottom: 2.5rem;
+}
+
+.formGroup label{
+    font-size: 1.4rem;
+}
+
+.formGroup input, .formGroup textarea {
+    padding: 1rem 0;
+    font-size: 1.4rem;
+}
+
+.formGroup textarea::placeholder {
+    color: #757575;
+    font-size: 1.4rem;
+}
+
+.contactForm button {
+    height: 5rem;
+    border-radius: .5rem
+
+}
+
+}
+
+
+@media (max-width:940px) {
+    .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 5rem;
+    background: black;
+    height: auto;
+    padding: 15rem 5% 15rem 5%;
+    flex-direction: column;
+}
+
+.content  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.content h1 {
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+.content .link {
+    font-size: 3rem;
+    margin-bottom: 5rem;
+    text-align: center;
+}
+
+.formCtn {
+    padding:2rem;
+    border-radius: 1.5rem;
+    width: 40rem;
+}
+
+.formCtn h3 {
+    font-size: 1.7rem;
+    margin-bottom: 2.5rem;
+}
+
+.formGroup {
+    border-radius: .5rem;
+    padding: 1rem;
+    margin-bottom: 2.5rem;
+}
+
+.formGroup label{
+    font-size: 1.4rem;
+}
+
+.formGroup input, .formGroup textarea {
+    padding: 1rem 0;
+    font-size: 1.4rem;
+}
+
+.formGroup textarea::placeholder {
+    color: #757575;
+    font-size: 1.4rem;
+}
+
+.contactForm button {
+    height: 5rem;
+    border-radius: .5rem
+
+}
+
+}
+
+
+@media (max-width:500px) {
+    .container {
+    gap: 5rem;
+    padding: 13rem 5% 10rem 5%;
+    flex-direction: column;
+}
+
+.content  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.content h1 {
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.content .link {
+    font-size: 3rem;
+    margin-bottom: 5rem;
+    text-align: center;
+}
+
+.formCtn {
+    padding:2rem;
+    border-radius: 1.5rem;
+    width: 100%;
+}
+
+.formCtn h3 {
+    font-size: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.formGroup {
+    border-radius: .5rem;
+    padding: 1rem;
+    margin-bottom: 2.5rem;
+}
+
+.formGroup label{
+    font-size: 1.4rem;
+}
+
+.formGroup input, .formGroup textarea {
+    padding: .5rem 0;
+    font-size: 1.4rem;
+}
+
+.formGroup textarea::placeholder {
+    color: #757575;
+    font-size: 1.4rem;
+}
+
+.contactForm button {
+    height: 5rem;
+    border-radius: .5rem
+
+}
+
+}
+
+.status {
+    font-size: 1.5rem;
+    color: rgb(196, 196, 196);
+    margin-top: 1rem;
+    text-align: center;
+}

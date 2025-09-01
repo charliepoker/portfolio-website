@@ -1,0 +1,16 @@
+ .mobileNav {
+        display: none;
+    }
+
+
+@media (max-width:640px) {
+
+
+    .desktopNav{
+        display: none;
+    }
+
+    .mobileNav {
+        display: flex;
+    }
+}

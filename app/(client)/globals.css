@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 1536px;
+  font-size: 62.5%;
+  font-family: var(--font-inter);
+    scroll-behavior: smooth;
+}
+
+:root {
+  --green : #64a1eb;
+  --darkGreen : #285879;
+  --darkLight : #e6f4ff;
+}
+
+
+a {
+  color: inherit;
+  text-decoration: none;
+}

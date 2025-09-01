@@ -1,0 +1,102 @@
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(135deg, #000000 0%, #0d0d16 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  opacity: 1;
+  transition: opacity 0.5s ease-out; /* Smooth fade */
+}
+
+.preloader.fadeOut {
+  opacity: 0; /* Fade to transparent */
+  pointer-events: none; /* Ignore clicks while fading */
+}
+
+.container {
+  text-align: center;
+}
+
+.textWrapper {
+  display: inline-flex;
+  align-items: center;
+  font-size: clamp(1.5rem, 4vw, 3rem);
+  font-weight: 800;
+  color: #c9c9c9;
+  text-shadow: 0 0 10px rgba(233, 255, 245, 0.3);
+  text-align: center;
+}
+
+.text {
+  letter-spacing: 0px;
+  text-align: center;
+}
+
+.cursor {
+  animation: blink 1s infinite;
+  margin-left: 2px;
+  color: var(--green);
+}
+
+@keyframes blink {
+  0%, 50% {
+    opacity: 1;
+  }
+  51%, 100% {
+    opacity: 0;
+  }
+}
+
+/* Alternative color schemes for different pages */
+.preloader.resume .textWrapper {
+  color: #ff6b6b;
+  text-shadow: 0 0 10px rgba(255, 107, 107, 0.3);
+}
+
+.preloader.resume .cursor {
+  color: #ff6b6b;
+}
+
+.preloader.blog .textWrapper {
+  color: #4ecdc4;
+  text-shadow: 0 0 10px rgba(78, 205, 196, 0.3);
+}
+
+.preloader.blog .cursor {
+  color: #4ecdc4;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .textWrapper {
+    font-size: clamp(1.2rem, 6vw, 2rem);
+  }
+}
+
+/* Add subtle animation to the background */
+.preloader::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(circle at 20% 80%, rgba(0, 255, 136, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(0, 255, 136, 0.05) 0%, transparent 50%);
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}

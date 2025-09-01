@@ -1,0 +1,116 @@
+.nav {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 6%;
+    z-index: 9999999999;
+}
+
+.logo {
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 800;
+}
+
+.menu {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #eee;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .6rem;
+    border: 2px solid #868686;
+    padding: .6rem 1.2rem;
+    border-radius: 5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 99999;
+}
+
+.menu:hover {
+    border-color: var(--green);
+    color: var(--green);
+}
+
+.menu span {
+    height: .5rem;
+    width: .5rem;
+    background: var(--green);
+    border-radius: 5rem;
+}
+
+.links {
+    background: rgb(36, 36, 43);
+    padding: 3rem 1.5rem 1.5rem 1.5rem;
+    border-radius: 1.5rem;
+    position: fixed;
+    right: 5%;
+    top: 6rem;
+    height: auto;
+    width: 55%;
+    z-index: 9999999;
+    opacity:0;
+}
+
+.links ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.link {
+    font-size: 1.7rem;
+    color: white;
+    list-style: none;
+    text-transform: uppercase;
+    transition: all .5s;
+}
+
+.link a {
+    padding: .7rem 1.3rem;
+    display: inline-flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.link span {
+    display: inline-flex;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 2rem;
+    background: var(--green);
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.link:hover {
+    color: var(--green);
+}
+
+.colored {
+    background: black;
+    color: #eee;
+    border-radius: 5rem;
+    font-weight: 600;
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+    padding: .6rem;
+}
+
+.colored:hover {
+    color: #000;
+    background: var(--green);
+}

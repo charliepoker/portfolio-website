@@ -1,0 +1,157 @@
+.nav {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7%;
+    z-index: 9999999;
+}
+.nav {
+  transition: all 0.3s ease, padding 0.3s ease;
+  z-index: 1000;
+}
+
+.scrolled {
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  width: 70%;
+  background: rgba(0, 0, 0, 0.492);
+  transform: translateX(-50%);
+  margin: 0 auto;
+  border-radius: 50px;
+  height: 6rem;
+  padding: 0 1%;
+  backdrop-filter: blur(10px);
+
+}
+
+.logo {
+    font-size: 2.4rem;
+    color: white;
+    font-weight: 800;
+}
+
+.links ul {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.link {
+    font-size: 1.3rem;
+    color: #eeeeee;
+    text-transform: uppercase;
+    list-style: none;
+    transition: all .5s;
+    border: 2px solid rgb(133, 133, 133);
+    border-radius: 5rem;
+    font-weight: 600;
+}
+.link a{
+    padding: .7rem  1.3rem;
+    display: inline-flex;
+    align-items: center;
+    gap: .5rem;
+}
+.link span{
+    display: inline-flex;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 2rem;
+    background: var(--green);
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-size: 1.1rem;
+}
+
+.link:hover {
+    color: var(--green);
+}
+
+.colored {
+    background: var(--green);
+    border: 2px solid black;
+    color: black;
+}
+
+.colored:hover {
+    background: black;
+    border: 2px solid white;
+}
+
+@media (max-width: 1000px) {
+    
+.scrolled {
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  width: 90%;
+  background: rgba(0, 0, 0, 0.492);
+  transform: translateX(-50%);
+  margin: 0 auto;
+  border-radius: 50px;
+  height: 6rem;
+  padding: 0 1%;
+  backdrop-filter: blur(10px);
+
+}
+}
+
+
+
+@media (max-width:840px) {
+    .nav {
+    height: 7rem;
+    padding: 0 6%;
+}
+
+
+.scrolled {
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.492);
+  transform: translateX(-50%);
+  margin: 0 auto;
+  border-radius: 50px;
+  height: 5rem;
+  padding: 0 1%;
+  backdrop-filter: blur(10px);
+
+}
+
+.logo {
+    font-size: 2rem;
+}
+
+.links ul {
+    gap: 1.5rem;
+}
+
+.link {
+    font-size: 1.2rem;
+}
+
+.link a{
+    padding: .7rem  1.3rem;
+    gap: .5rem;
+}
+.link span{
+    height: 2rem;
+    width: 2rem;
+    font-size: 1.1rem;
+}
+
+.colored {
+    border: 2px solid black;
+}
+
+}
