@@ -29,14 +29,17 @@ const Preloader = ({ text, variant = '' }) => {
   if (!isVisible) return null;
 
   return (
-    <div className={`${styles.preloader} ${variant ? styles[variant] : ''} ${isFadingOut ? styles.fadeOut : ''}`}>
-      <div className={styles.container}>
-        <div className={styles.textWrapper}>
-          <span className={styles.text}>{displayText}</span>
-          <span className={styles.cursor}>|</span>
-        </div>
-      </div>
-    </div>
+    // <div className={`${styles.preloader} ${variant ? styles[variant] : ''} ${isFadingOut ? styles.fadeOut : ''}`}>
+    //   <div className={styles.container}>
+    //     <div className={styles.textWrapper}>
+    //       <span className={styles.text}>{displayText}</span>
+    //       <span className={styles.cursor}>|</span>
+    //     </div>
+    //   </div>
+    // </div>
+    <>
+    
+    </>
   );
 };
 
