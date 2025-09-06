@@ -48,3 +48,33 @@
 
 }
 }
+
+@media (max-width:560px) {
+    .socials {
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.socials li{
+    font-size: 1.2rem;
+}
+
+
+
+.second {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.second img{
+    object-fit: contain;
+    object-position: bottom;
+    height: 45rem;
+
+
+}
+}
