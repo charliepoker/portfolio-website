@@ -10,6 +10,7 @@ body {
   font-size: 62.5%;
   font-family: var(--font-inter);
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 :root {
