@@ -1,6 +1,6 @@
 .header {
     height: auto;
-    background: #101317;
+    background: #1b2128;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -10,7 +10,7 @@
 }
 .header span {
     font-size: 1.6rem;
-    color: grey;
+    color: rgb(174, 174, 174);
     text-align: center;
 }
 
@@ -25,7 +25,7 @@
 
 
 .headerMeta ul {
-    color: grey;
+    color: rgb(163, 163, 163);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -121,13 +121,14 @@
 }
 
 .contentCtn {
-    background: whitesmoke;
+    background: rgb(0, 0, 0);
 
 }
 .content {
     max-width: 1000px;
     margin: 0 auto;
     padding: 2rem 5% 10rem 5%;
+    color: whitesmoke;
 }
 
 
@@ -182,7 +183,7 @@
     .content {
     max-width: 1080px;
     margin: 0 auto;
-    padding: 3rem 5% 10rem 5%;
+    padding: 1rem 6% 5rem 6%;
 }
 
 
@@ -219,4 +220,13 @@
     line-height: 1.35;
     margin-bottom: 1.4rem;
 }
+.content li{
+    font-size: 1.4rem;
+}
+
+.content img {
+    margin: 1.2rem 0;
+}
+
+
 }

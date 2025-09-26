@@ -1,0 +1,36 @@
+.shareContainer {
+  margin-top: 2rem;
+  padding: 3rem 0;
+  border-top: 1px solid #dddddd5f;
+}
+
+.shareContainer h4 {
+  margin-bottom: 1.2rem;
+  font-size: 1.4rem;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-left: -.5rem;
+}
+
+.buttons a,
+.buttons button {
+  padding: 1rem 1.5rem;
+  background: #ffffff30;
+  border: 1px solid #cccccc62;
+  border-radius: 50px;
+  text-decoration: none;
+  color: #333;
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  color: white;
+}
+
+.buttons a:hover,
+.buttons button:hover {
+  background: #e0e0e0;
+}
