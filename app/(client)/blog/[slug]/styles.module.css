@@ -54,6 +54,14 @@
     object-position: center;
 }
 
+
+@media (max-width:1200px) {
+    .headerBanner {
+    width: 100%;
+}
+
+    
+}
 @media (max-width:800px) {
     .header {
     padding: 13rem 6% 8rem 6%;
