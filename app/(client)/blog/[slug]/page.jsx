@@ -4,6 +4,7 @@ import { client } from "@/lib/sanity"; // adjust to your setup
 import { PortableText } from "@portabletext/react";
 import imageUrlBuilder from '@sanity/image-url';
 import styles from "./styles.module.css";
+import Share from "@/components/ShareLink/Share";
 
 // Initialize the image URL builder
 const builder = imageUrlBuilder(client);
@@ -195,8 +196,14 @@ export default async function BlogPage({ params }) {
           ) : (
             <p>No content available</p>
           )}
+
+          <Share/>
         </div>
+
+         
         </div>
+
+       
       </>
     );
   } catch (error) {
