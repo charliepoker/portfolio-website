@@ -1,17 +1,17 @@
 // page.js - Resume Page Component
-import React from 'react';
-import styles from './styles.module.css';
-import Image from 'next/image';
-import Link from 'next/link';
+import React from "react";
+import styles from "./styles.module.css";
+import Image from "next/image";
+import Link from "next/link";
 import { GoArrowUpRight } from "react-icons/go";
-import ResumeDetails from '@/components/ResumeDetails/ResumeDetails';
-import Preloader from '@/components/Preloader/Preloader';
-import Socials from '@/components/Socials/Socials';
-import { client } from '@/lib/sanity';
-import { urlFor } from '@/lib/sanity';
+import ResumeDetails from "@/components/ResumeDetails/ResumeDetails";
+import Preloader from "@/components/Preloader/Preloader";
+import Socials from "@/components/Socials/Socials";
+import { client } from "@/lib/sanity";
+import { urlFor } from "@/lib/sanity";
 
 // GROQ query for resume data
-const resumeQuery = `*[_type == "resume" && isActive == true][0]{
+const resumeQuery = `*[_type == "resume"][0]{
   title,
   profileImage,
   preloaderText,
@@ -41,9 +41,9 @@ async function ResumePage() {
         </div>
         <div className={`${styles.card} ${styles.second}`}>
           {resumeData.profileImage ? (
-            <Image 
-              src={urlFor(resumeData.profileImage).url()} 
-              alt={resumeData.profileImage.alt || 'Profile Photo'} 
+            <Image
+              src={urlFor(resumeData.profileImage).url()}
+              alt={resumeData.profileImage.alt || "Profile Photo"}
               fill
             />
           ) : (
